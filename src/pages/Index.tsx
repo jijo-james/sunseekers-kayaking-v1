@@ -5,6 +5,7 @@ import FeaturedTours from '../components/FeaturedTours';
 import AboutUs from '../components/AboutUs';
 import Testimonials from '../components/Testimonials';
 import Gallery from '../components/Gallery';
+import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -17,6 +18,7 @@ const Index = () => {
       <AboutUs />
       <Gallery />
       <Testimonials />
+      <FAQSection />
       <ContactSection />
       <Footer />
     </div>

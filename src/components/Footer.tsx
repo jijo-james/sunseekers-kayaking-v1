@@ -1,8 +1,15 @@
 
-import { Facebook, Instagram, Twitter, Youtube, Heart } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Heart, MessageSquare } from 'lucide-react';
+import { Button } from './ui/button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  
+  const joinWhatsAppCommunity = () => {
+    // Replace with your actual WhatsApp community invite link
+    const whatsappUrl = `https://chat.whatsapp.com/invite/yourgrouplink`;
+    window.open(whatsappUrl, '_blank');
+  };
   
   return (
     <footer className="bg-ocean-900 text-white pt-16 pb-8">
@@ -54,25 +61,19 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Newsletter Column */}
+          {/* WhatsApp Community Column */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Newsletter</h3>
+            <h3 className="text-xl font-bold mb-4">Join Our Community</h3>
             <p className="text-ocean-100 mb-4">
-              Subscribe to receive special offers and updates about our adventures.
+              Connect with fellow kayak enthusiasts, get the latest updates, and exclusive offers in our WhatsApp community.
             </p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="px-4 py-2 rounded-l-md w-full text-gray-800 focus:outline-none"
-              />
-              <button 
-                type="submit" 
-                className="bg-sunset-500 hover:bg-sunset-600 text-white px-4 py-2 rounded-r-md transition-colors"
-              >
-                Join
-              </button>
-            </form>
+            <Button 
+              onClick={joinWhatsAppCommunity}
+              className="w-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center py-3 text-base font-medium"
+            >
+              <MessageSquare className="mr-2" size={18} />
+              Join WhatsApp Community
+            </Button>
           </div>
         </div>
         
