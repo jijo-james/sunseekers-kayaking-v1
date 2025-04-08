@@ -1,31 +1,14 @@
 
-import { useState } from 'react';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare } from 'lucide-react';
+import { Button } from './ui/button';
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real app, this would send the form data to a server
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+  const openWhatsApp = () => {
+    // Replace with your actual WhatsApp number
+    const phoneNumber = "+919484123456";
+    const message = "Hello, I'm interested in booking a kayaking tour!";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -72,77 +55,23 @@ const ContactSection = () => {
             </div>
           </div>
           
-          <div>
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg text-gray-800">
-              <h3 className="text-2xl font-bold mb-6 text-ocean-800">Send a Message</h3>
+          <div className="flex flex-col items-center justify-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center w-full max-w-md">
+              <h3 className="text-2xl font-bold mb-6 text-ocean-800">Contact Us on WhatsApp</h3>
               
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-ocean-500 focus:border-ocean-500"
-                  required
-                />
-              </div>
+              <p className="text-gray-600 mb-6">
+                For the fastest response, reach out to us directly on WhatsApp. 
+                Our team is available to answer your questions and help you plan your perfect kayaking adventure.
+              </p>
               
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-ocean-500 focus:border-ocean-500"
-                  required
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-ocean-500 focus:border-ocean-500"
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-ocean-500 focus:border-ocean-500"
-                  required
-                />
-              </div>
-              
-              <button 
-                type="submit" 
-                className="w-full flex items-center justify-center btn-primary"
+              <Button 
+                onClick={openWhatsApp}
+                className="w-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center py-4 text-lg font-medium"
               >
-                Send Message
-                <Send size={18} className="ml-2" />
-              </button>
-            </form>
+                <MessageSquare className="mr-2" />
+                Chat with Us on WhatsApp
+              </Button>
+            </div>
           </div>
         </div>
       </div>
