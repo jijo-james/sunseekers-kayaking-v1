@@ -18,9 +18,9 @@ const AboutUs = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                <img 
-                  src="src/images/about.jpg" 
-                  alt="Peaceful Kerala backwaters" 
+                <img
+                  src="images/about.jpg"
+                  alt="Peaceful Kerala backwaters"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -28,21 +28,21 @@ const AboutUs = () => {
               <div className="absolute -top-6 -left-6 w-48 h-48 bg-sunset-50 rounded-lg -z-10"></div>
             </div>
           </div>
-          
+
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
             <div className="w-20 h-1 bg-sunset-500 mb-6"></div>
-            
+
             <p className="text-gray-700 mb-6">
               Founded by passionate kayakers and nature enthusiasts, Sunseekers Kayaking was born from a deep love for Alappuzha(Alleppey)'s intricate waterways and a desire to share their hidden beauty with the world.
             </p>
-            
+
             <p className="text-gray-700 mb-6">
               Our name Sunseekers - perfectly capturing our spirit of adventure and discovery through Alleppey's stunning backwaters, lakes, and rivers.
             </p>
-            
+
             <h3 className="text-xl font-bold mb-4 text-ocean-800">Why Choose Us</h3>
-            
+
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start">
@@ -51,7 +51,7 @@ const AboutUs = () => {
                 </li>
               ))}
             </ul>
-            
+
             <a href="#contact" className="btn-primary inline-block">
               Connect With Us
             </a>

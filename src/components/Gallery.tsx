@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import shores from '/images/foreigners-in-kayak.jpeg'
 
 type GalleryImage = {
   src: string;
@@ -13,32 +14,32 @@ const Gallery = () => {
 
   const galleryImages: GalleryImage[] = [
     {
-      src: "src/images/foreigners-in-kayak.jpeg",
+      src: "/images/foreigners-in-kayak.jpeg",
       alt: "Serene backwaters with tree shades",
       category: "Shores"
     },
     {
-      src: "src/images/sunset-gallary.jpg",
+      src: "/images/sunset-gallary.jpg",
       alt: "Sunset on the water",
       category: "Sunset"
     },
     {
-      src: "src/images/landscape-solo-kayaking.jpg",
+      src: "/images/landscape-solo-kayaking.jpg",
       alt: "Solo kayaking",
       category: "Vembanad Lake"
     },
     {
-      src: "src/images/night-kayaking.jpeg",
+      src: "/images/night-kayaking.jpeg",
       alt: "Kayakers exploring the waterways",
       category: "Adventures"
     },
     {
-      src: "src/images/lake-view.jpeg",
+      src: "/images/lake-view.jpeg",
       alt: "Morning fog on the lake",
       category: "Landscapes"
     },
     {
-      src: "src/images/foreigners-in-kayak.jpeg",
+      src: "/images/foreigners-in-kayak.jpeg",
       alt: "Unique experinces in the god's own country",
       category: "Culture"
     }

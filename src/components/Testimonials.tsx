@@ -15,9 +15,9 @@ const Testimonial = ({ quote, name, location, image }: TestimonialProps) => {
       <div className="flex flex-col h-full">
         <p className="text-gray-700 mb-6 flex-grow">"{quote}"</p>
         <div className="flex items-center">
-          <img 
-            src={image} 
-            alt={name} 
+          <img
+            src={image}
+            alt={name}
             className="w-12 h-12 rounded-full object-cover mr-4"
           />
           <div>
@@ -36,19 +36,19 @@ const Testimonials = () => {
       quote: "The sunset kayaking tour was magical. Our guide was knowledgeable and showed us hidden corners of the backwaters that larger boats can't access.",
       name: "Priti",
       location: "Varanasi, UP",
-      image: "src/images/testimonial-priti-v2.jpeg"
+      image: "/images/testimonial-priti-v2.jpeg"
     },
     {
       quote: "As a solo traveler, I felt completely comfortable with Sunseekers Kayaking. The small group setting allowed me to make friends while experiencing Kerala's natural beauty.",
       name: "Jijo",
       location: "Bangalore, KA",
-      image: "src/images/testimonial-jijo.jpeg"
+      image: "/images/testimonial-jijo.jpeg"
     },
     {
       quote: "The Vembanadu Lake tour exceeded my expectations. I loved spotting fishes and learning about the ecosystem from our passionate guide Akash.",
       name: "Anjusha",
       location: "Mumbai, MH",
-      image: "src/images/testimonial-anjusha.jpeg"
+      image: "/images/testimonial-anjusha.jpeg"
     }
   ];
 
@@ -62,10 +62,10 @@ const Testimonials = () => {
             Stories and experiences from adventurers who've paddled with us
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Testimonial 
+            <Testimonial
               key={index}
               quote={testimonial.quote}
               name={testimonial.name}
@@ -74,10 +74,10 @@ const Testimonials = () => {
             />
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <a 
-            href="#reviews" 
+          <a
+            href="#reviews"
             className="text-ocean-700 hover:text-ocean-800 font-medium underline flex items-center justify-center"
           >
             Read More Reviews

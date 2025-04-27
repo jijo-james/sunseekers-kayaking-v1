@@ -81,7 +81,7 @@ const FeaturedTours = () => {
       groupSize: "1-8 people",
       rating: 4.9,
       location: "Punnamada",
-      image: "src/images/island-expedition.jpg",
+      image: "/images/island-expedition.jpg",
       featured: true
     },
     {
@@ -93,7 +93,7 @@ const FeaturedTours = () => {
       groupSize: "1-8 people",
       rating: 4.8,
       location: "Alleppey",
-      image: "src/images/sunset-sunrise.jpg",
+      image: "/images/sunset-sunrise.jpg",
       featured: true
     },
     {
@@ -105,7 +105,7 @@ const FeaturedTours = () => {
       groupSize: "2-6 people",
       rating: 4.7,
       location: "Alleppey",
-      image: "src/images/narrow-canal-3.jpeg",
+      image: "/images/narrow-canal-3.jpeg",
       featured: true
     }
   ];
