@@ -50,7 +50,7 @@ const Header = () => {
             <a href="#gallery" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Gallery</a>
             <a href="#testimonials" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Testimonials</a>
             <a href="#contact" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            <a href="#book" className="btn-primary text-center mt-4" onClick={() => setIsMenuOpen(false)}>Book Now</a>
+            <a href="#contact" className="btn-primary text-center mt-4" onClick={() => setIsMenuOpen(false)}>Book Now</a>
           </div>
         </div>
       )}
