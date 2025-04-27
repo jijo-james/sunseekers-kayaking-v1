@@ -29,7 +29,7 @@ const Header = () => {
           <a href="#gallery" className="nav-link">Gallery</a>
           <a href="#testimonials" className="nav-link">Testimonials</a>
           <a href="#contact" className="nav-link">Contact</a>
-          <a href="#book" className="btn-primary">Book Now</a>
+          <a href="#contact" className="btn-primary">Book Now</a>
         </nav>
 
         {/* Mobile Menu Button */}
