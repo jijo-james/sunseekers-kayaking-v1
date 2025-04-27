@@ -19,7 +19,7 @@ const AboutUs = () => {
             <div className="relative">
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                  src="src/images/about.jpg" 
                   alt="Peaceful Kerala backwaters" 
                   className="w-full h-full object-cover"
                 />
@@ -34,11 +34,11 @@ const AboutUs = () => {
             <div className="w-20 h-1 bg-sunset-500 mb-6"></div>
             
             <p className="text-gray-700 mb-6">
-              Founded in 2015 by passionate kayakers and nature enthusiasts, Nadodi Voyage was born from a deep love for Kerala's intricate waterways and a desire to share their hidden beauty with the world.
+              Founded by passionate kayakers and nature enthusiasts, Sunseekers Kayaking was born from a deep love for Alappuzha(Alleppey)'s intricate waterways and a desire to share their hidden beauty with the world.
             </p>
             
             <p className="text-gray-700 mb-6">
-              Our name "Nadodi" comes from the Malayalam word for "wanderer" or "explorer" - perfectly capturing our spirit of adventure and discovery through Kerala's stunning backwaters, lakes, and rivers.
+              Our name Sunseekers - perfectly capturing our spirit of adventure and discovery through Alleppey's stunning backwaters, lakes, and rivers.
             </p>
             
             <h3 className="text-xl font-bold mb-4 text-ocean-800">Why Choose Us</h3>

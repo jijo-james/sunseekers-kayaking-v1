@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 const ContactSection = () => {
   const openWhatsApp = () => {
     // Replace with your actual WhatsApp number
-    const phoneNumber = "+919484123456";
+    const phoneNumber = "+917012125166";
     const message = "Hello, I'm interested in booking a kayaking tour!";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -16,39 +16,39 @@ const ContactSection = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Get in Touch</h2>
             <div className="w-20 h-1 bg-sunset-500 mb-8"></div>
             
             <p className="text-ocean-50 mb-8 text-lg">
-              Have questions about our tours or want to customize your adventure? 
+              Have questions about our tours or want to customize your adventure?<br /> 
               Reach out to us and our team will be happy to assist you.
             </p>
             
             <div className="space-y-6 mb-8">
-              <div className="flex items-start">
-                <Phone className="text-sunset-400 mr-4 mt-1 flex-shrink-0" />
+              <div className="flex items-center">
+                <Phone className="text-sunset-400 mr-4 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold mb-1">Call Us</h3>
-                  <p className="text-ocean-100">+91 (0) 484 123 4567</p>
+                  <h3 className="font-bold mb-1 sr-only">Call Us</h3>
+                  <p className="text-ocean-100 flex items-center">+91 7012125166</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <Mail className="text-sunset-400 mr-4 mt-1 flex-shrink-0" />
+                <Mail className="text-sunset-400 mr-4 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold mb-1">Email Us</h3>
-                  <p className="text-ocean-100">info@nadodivoyage.com</p>
+                  <h3 className="font-bold mb-1 sr-only">Email Us</h3>
+                  <p className="text-ocean-100 flex item-center">sunseekerskayaking@gmail.com</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <MapPin className="text-sunset-400 mr-4 mt-1 flex-shrink-0" />
+                <MapPin className="text-sunset-400 mr-4 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold mb-1">Find Us</h3>
-                  <p className="text-ocean-100">
-                    Nadodi Voyage, Boat Jetty Road<br />
-                    Kumarakom, Kerala 686563<br />
-                    India
+                  <h3 className="font-bold mb-1 sr-only">Find Us</h3>
+                  <p className="text-ocean-100 flex item-center">
+                    Sunseekers Kayaking, Starting Point<br />
+                    Punnamada, Alappuzha. 688006<br />
+                    Kerala, India
                   </p>
                 </div>
               </div>

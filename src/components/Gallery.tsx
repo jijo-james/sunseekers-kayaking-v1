@@ -13,33 +13,33 @@ const Gallery = () => {
 
   const galleryImages: GalleryImage[] = [
     {
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      alt: "Serene backwaters with coconut trees",
-      category: "Backwaters"
+      src: "src/images/foreigners-in-kayak.jpeg",
+      alt: "Serene backwaters with tree shades",
+      category: "Shores"
     },
     {
-      src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      src: "src/images/sunset-gallary.jpg",
       alt: "Sunset on the water",
       category: "Sunset"
     },
     {
-      src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      alt: "Dense mangrove forest",
-      category: "Mangroves"
+      src: "src/images/landscape-solo-kayaking.jpg",
+      alt: "Solo kayaking",
+      category: "Vembanad Lake"
     },
     {
-      src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      src: "src/images/night-kayaking.jpeg",
       alt: "Kayakers exploring the waterways",
       category: "Adventures"
     },
     {
-      src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      src: "src/images/lake-view.jpeg",
       alt: "Morning fog on the lake",
       category: "Landscapes"
     },
     {
-      src: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      alt: "Traditional Kerala houseboat",
+      src: "src/images/foreigners-in-kayak.jpeg",
+      alt: "Unique experinces in the god's own country",
       category: "Culture"
     }
   ];
@@ -54,16 +54,16 @@ const Gallery = () => {
             Glimpses of the extraordinary experiences that await you
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {galleryImages.map((image, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative overflow-hidden rounded-lg aspect-square cursor-pointer group"
               onClick={() => setSelectedImage(image)}
             >
-              <img 
-                src={image.src} 
+              <img
+                src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -79,18 +79,18 @@ const Gallery = () => {
 
       {/* Lightbox */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedImage(null)}
         >
-          <button 
+          <button
             className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X size={32} />
           </button>
-          <img 
-            src={selectedImage.src} 
+          <img
+            src={selectedImage.src}
             alt={selectedImage.alt}
             className="max-w-full max-h-[90vh] object-contain"
             onClick={(e) => e.stopPropagation()}

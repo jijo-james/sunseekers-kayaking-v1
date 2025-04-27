@@ -15,9 +15,9 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('/images/hero.jpg')",
           backgroundPosition: "center 30%"
-        }}
+        }} 
       />
       
       {/* Overlay */}
@@ -32,7 +32,7 @@ const Hero = () => {
           Immerse yourself in authentic kayaking adventures through pristine backwaters and untouched natural beauty
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <a href="#book" className="btn-primary text-lg">
+          <a href="#contact" className="btn-primary text-lg">
             Book Your Adventure
           </a>
           <a href="#tours" className="btn-outline bg-white/10 text-white border-white text-lg">

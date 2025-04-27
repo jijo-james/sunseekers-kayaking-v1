@@ -34,21 +34,21 @@ const Testimonials = () => {
   const testimonials: TestimonialProps[] = [
     {
       quote: "The sunset kayaking tour was magical. Our guide was knowledgeable and showed us hidden corners of the backwaters that larger boats can't access.",
-      name: "Sarah Johnson",
-      location: "United Kingdom",
-      image: "https://randomuser.me/api/portraits/women/45.jpg"
+      name: "Priti",
+      location: "Varanasi, UP",
+      image: "src/images/testimonial-priti-v2.jpeg"
     },
     {
-      quote: "As a solo traveler, I felt completely comfortable with Nadodi. The small group setting allowed me to make friends while experiencing Kerala's natural beauty.",
-      name: "Michael Chen",
-      location: "Singapore",
-      image: "https://randomuser.me/api/portraits/men/22.jpg"
+      quote: "As a solo traveler, I felt completely comfortable with Sunseekers Kayaking. The small group setting allowed me to make friends while experiencing Kerala's natural beauty.",
+      name: "Jijo",
+      location: "Bangalore, KA",
+      image: "src/images/testimonial-jijo.jpeg"
     },
     {
-      quote: "The mangrove wildlife tour exceeded our expectations. Our children loved spotting birds and learning about the ecosystem from our passionate guide.",
-      name: "Emily Rodriguez",
-      location: "United States",
-      image: "https://randomuser.me/api/portraits/women/32.jpg"
+      quote: "The Vembanadu Lake tour exceeded my expectations. I loved spotting fishes and learning about the ecosystem from our passionate guide Akash.",
+      name: "Anjusha",
+      location: "Mumbai, MH",
+      image: "src/images/testimonial-anjusha.jpeg"
     }
   ];
 

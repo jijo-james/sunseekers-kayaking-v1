@@ -14,39 +14,39 @@ type TourCardProps = {
   featured?: boolean;
 }
 
-const TourCard = ({ 
-  title, 
-  description, 
-  price, 
-  duration, 
-  groupSize, 
-  rating, 
-  location, 
-  image 
+const TourCard = ({
+  title,
+  description,
+  price,
+  duration,
+  groupSize,
+  rating,
+  location,
+  image
 }: TourCardProps) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover group">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md card-hover group flex flex-col">
       <div className="relative h-64 overflow-hidden">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute top-4 left-4 bg-sunset-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-          ${price} USD
+          ₹{price} INR
         </div>
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
-        
+
         <div className="flex items-center mb-2 text-sm text-ocean-800/80">
           <MapPin size={16} className="mr-1" />
           <span>{location}</span>
         </div>
-        
+
         <p className="text-gray-600 mb-4">{description}</p>
-        
+
         <div className="flex flex-wrap gap-4 mb-4 text-sm">
           <div className="flex items-center text-ocean-700">
             <Clock size={16} className="mr-1" />
@@ -61,8 +61,8 @@ const TourCard = ({
             <span>{rating.toFixed(1)}</span>
           </div>
         </div>
-        
-        <a href="#book" className="btn-primary block text-center">
+
+        <a href="#contact" className="btn-primary block text-center">
           Book Now
         </a>
       </div>
@@ -74,38 +74,38 @@ const FeaturedTours = () => {
   const tours: TourCardProps[] = [
     {
       id: "1",
-      title: "Vembanad Lake Expedition",
-      description: "Explore Kerala's largest lake with its diverse ecosystems and bird sanctuaries.",
-      price: 89,
-      duration: "4 hours",
-      groupSize: "2-8 people",
+      title: "Island Expedition",
+      description: "Get ready for a super chill kayak trip around our beautiful island village! We’ll take you on a special handpicked route at a nice, easy pace, with plenty of stops for breaks and refreshments.",
+      price: 900,
+      duration: "3 hours",
+      groupSize: "1-8 people",
       rating: 4.9,
-      location: "Kumarakom",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      location: "Punnamada",
+      image: "src/images/island-expedition.jpg",
       featured: true
     },
     {
       id: "2",
-      title: "Sunset Backwater Cruise",
-      description: "Paddle through serene canals while witnessing a spectacular Kerala sunset.",
-      price: 69,
+      title: "Sunrise/Sunset Backwater Cruise",
+      description: "Paddle through serene canals while witnessing a spectacular Kerala sunrise/sunset. We’ll start by picking you up by boat from the meetup spot and take you over to our island",
+      price: 700,
       duration: "2 hours",
-      groupSize: "2-6 people",
+      groupSize: "1-8 people",
       rating: 4.8,
       location: "Alleppey",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "src/images/sunset-sunrise.jpg",
       featured: true
     },
     {
       id: "3",
-      title: "Mangrove Wildlife Safari",
-      description: "Navigate through dense mangrove forests and spot exotic birds and animals.",
-      price: 99,
-      duration: "5 hours",
+      title: "Through Narrow Canals",
+      description: "You’ll paddle through narrow canals, glide past mini islands, and catch some amazing views at our favorite sunrise or sunset points. And trust us, there’s a lot more magic waiting for you!",
+      price: 800,
+      duration: "2 hours",
       groupSize: "2-6 people",
       rating: 4.7,
-      location: "Poovar",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      location: "Alleppey",
+      image: "src/images/narrow-canal-3.jpeg",
       featured: true
     }
   ];
@@ -120,15 +120,15 @@ const FeaturedTours = () => {
             Discover our hand-crafted kayaking experiences through Kerala's most beautiful waterways
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tours.map((tour) => (
             <TourCard key={tour.id} {...tour} />
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <a href="#all-tours" className="btn-outline inline-flex items-center">
+          <a href="#contact" className="btn-outline inline-flex items-center">
             View All Tours
           </a>
         </div>
