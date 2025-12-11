@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && touch docs/CNAME && echo 'sunseekerskayaking.in' >> docs/CNAME",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
