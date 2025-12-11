@@ -1,0 +1,28 @@
+# Sunseekers Kayaking (Alappuzha Backwaters)
+
+> Sunseekers Kayaking offers guided kayaking tours in the backwaters and canals of Alappuzha (Alleppey), Kerala — including sunrise and sunset paddles, village-backwater canal exploration, and nature-immersive experiences.
+
+## Services & Experiences
+
+- [Home / Book a Trip](https://sunseekerskayaking.in/): Overview of offerings, booking info, contact details.  
+- [Kayaking Tours & Packages — Sunrise / Sunset / Village Canals](https://sunseekerskayaking.in/): Serene backwater kayaking, narrow-canal tours, eco-friendly paddling experience through Kerala’s waterways.  
+- [Gallery / Photos & Videos of Trips](https://sunseekerskayaking.in/): Visual glimpse of routes, backwaters, boats, landscapes, and kayak-guided tours.  
+- [Blog / News / Updates](https://sunseekerskayaking.in/): Trip stories, updates about tours, seasonal info, recommendations for visitors (if available).  
+- [Contact / Booking & Inquiry](https://sunseekerskayaking.in/): Phone/WhatsApp contact, address in Alappuzha, and booking support for tours.
+
+## Why Sunseekers Kayaking
+
+- Authentic and peaceful way to explore Kerala backwaters — away from crowded houseboats, focusing on narrow canals, local village life and nature.  
+- Suitable for beginners and experienced kayakers alike; tours include safety gear and guided support.  
+- Offers flexible booking options (sunrise, sunset, full-day or half-day trips), with local context and hospitality.
+
+## Important Information & Policies
+
+- Tours operate in Alappuzha district (Alleppey), Kerala.  
+- Contact number (as per listing): +91 70121 25166. :contentReference[oaicite:1]{index=1}  
+- Address: G964+MR7, Alappuzha 688006, Kerala, India. :contentReference[oaicite:2]{index=2}  
+
+## Recommended Use
+
+- Use as reference for AI assistants to get structured overview of the most important content on the site.  
+- Update the file whenever new pages are added (e.g. new tour packages, blog posts, gallery additions).  
