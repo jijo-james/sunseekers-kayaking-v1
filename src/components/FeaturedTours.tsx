@@ -37,28 +37,30 @@ const TourCard = ({
         </div>
       </div>
 
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <div className="p-6 flex flex-col space-between grow">
+        <div className='grow'>
+          <h3 className="text-xl font-bold mb-2">{title}</h3>
 
-        <div className="flex items-center mb-2 text-sm text-ocean-800/80">
-          <MapPin size={16} className="mr-1" />
-          <span>{location}</span>
-        </div>
-
-        <p className="text-gray-600 mb-4">{description}</p>
-
-        <div className="flex flex-wrap gap-4 mb-4 text-sm">
-          <div className="flex items-center text-ocean-700">
-            <Clock size={16} className="mr-1" />
-            <span>{duration}</span>
+          <div className="flex items-center mb-2 text-sm text-ocean-800/80">
+            <MapPin size={16} className="mr-1" />
+            <span>{location}</span>
           </div>
-          <div className="flex items-center text-ocean-700">
-            <Users size={16} className="mr-1" />
-            <span>{groupSize}</span>
-          </div>
-          <div className="flex items-center text-sunset-600">
-            <Star size={16} className="mr-1 fill-sunset-500 stroke-sunset-500" />
-            <span>{rating.toFixed(1)}</span>
+
+          <p className="text-gray-600 mb-4">{description}</p>
+
+          <div className="flex flex-wrap gap-4 mb-4 text-sm">
+            <div className="flex items-center text-ocean-700">
+              <Clock size={16} className="mr-1" />
+              <span>{duration}</span>
+            </div>
+            <div className="flex items-center text-ocean-700">
+              <Users size={16} className="mr-1" />
+              <span>{groupSize}</span>
+            </div>
+            <div className="flex items-center text-sunset-600">
+              <Star size={16} className="mr-1 fill-sunset-500 stroke-sunset-500" />
+              <span>{rating.toFixed(1)}</span>
+            </div>
           </div>
         </div>
 
